@@ -3,7 +3,7 @@ package org.example;
 public class Main {
 
     public static void main(String[] args) {
-        int number = 28;
+        int number = 11212;
         isPalindrome(number);
         isPerfectNumber(number);
         numberToWords(number);
@@ -53,34 +53,34 @@ public class Main {
             for (char i : digits) {
                 switch (i) {
                     case '0' :
-                        text = text + "Zero";
+                        text = text + "Zero ";
                         break;
                     case '1' :
-                        text = text + "One";
+                        text = text + "One ";
                         break;
                     case '2' :
-                        text = text + "Two";
+                        text = text + "Two ";
                         break;
                     case '3' :
-                        text = text + "Three";
+                        text = text + "Three ";
                         break;
                     case '4' :
-                        text = text + "Four";
+                        text = text + "Four ";
                         break;
                     case '5':
-                        text = text + "Five";
+                        text = text + "Five ";
                         break;
                     case '6':
-                        text = text + "Six";
+                        text = text + "Six ";
                         break;
                     case '7':
-                        text = text + "Seven";
+                        text = text + "Seven ";
                         break;
                     case '8' :
-                        text = text + "Eight";
+                        text = text + "Eight ";
                         break;
                     case '9' :
-                        text = text + "Nine";
+                        text = text + "Nine ";
                         break;
                     default:
                         break;
