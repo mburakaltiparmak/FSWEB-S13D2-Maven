@@ -3,14 +3,14 @@ package org.example;
 public class Main {
 
     public static void main(String[] args) {
-        int number = 11212;
+        int number = -1221;
         isPalindrome(number);
         isPerfectNumber(number);
         numberToWords(number);
 
     }
     public static boolean isPalindrome(int number) {
-        String numString =String.valueOf(number);
+        String numString =String.valueOf(Math.abs(number));;
         char[] digits = numString.toCharArray();
 
         for (int i = 0, j=digits.length-1; i<j ; i++,j--){
