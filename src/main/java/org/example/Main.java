@@ -6,6 +6,7 @@ public class Main {
         int number = 28;
         isPalindrome(number);
         isPerfectNumber(number);
+        numberToWords(number);
 
     }
     public static boolean isPalindrome(int number) {
@@ -38,5 +39,58 @@ public class Main {
             return false;
         }
 
+    }
+    public static String numberToWords (int number) {
+        if (number < 0) {
+            String text = "Invalid Value";
+            System.out.println(text);
+            return text;
+        }
+        else {
+            String numString =String.valueOf(number);
+            char[] digits = numString.toCharArray();
+            String text = "";
+            for (char i : digits) {
+                switch (i) {
+                    case '0' :
+                        text = text + "Zero";
+                        break;
+                    case '1' :
+                        text = text + "One";
+                        break;
+                    case '2' :
+                        text = text + "Two";
+                        break;
+                    case '3' :
+                        text = text + "Three";
+                        break;
+                    case '4' :
+                        text = text + "Four";
+                        break;
+                    case '5':
+                        text = text + "Five";
+                        break;
+                    case '6':
+                        text = text + "Six";
+                        break;
+                    case '7':
+                        text = text + "Seven";
+                        break;
+                    case '8' :
+                        text = text + "Eight";
+                        break;
+                    case '9' :
+                        text = text + "Nine";
+                        break;
+                    default:
+                        break;
+
+                }
+            }
+
+            System.out.println(text.trim());
+            return  text.trim();
+
+        }
     }
 }
